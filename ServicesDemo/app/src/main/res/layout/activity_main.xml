@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/randomNoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            style="@style/TextAppearance.AppCompat.Large"
+            tools:text="10"/>
+
+        <Button
+            android:id="@+id/start_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Service"
+            android:layout_centerInParent="true"/>
+
+
+        <Button
+            android:id="@+id/stop_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Service"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/start_service"
+            />
+
+        <Button
+            android:id="@+id/bind_service"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bind Service"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/stop_service"
+            />
+
+        <Button
+            android:id="@+id/unbind_service"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UnBind Service"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/bind_service"
+            />
+
+        <Button
+            android:id="@+id/get_random_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Random No"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/unbind_service"
+            />
+
+
+
+    </RelativeLayout>
+
+</layout>
